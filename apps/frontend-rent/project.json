@@ -18,7 +18,10 @@
           "apps/frontend-rent/src/favicon.ico",
           "apps/frontend-rent/src/assets"
         ],
-        "styles": ["apps/frontend-rent/src/styles.css"],
+        "styles": [
+          "apps/frontend-rent/src/styles.css",
+          "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        ],
         "scripts": []
       },
       "configurations": {

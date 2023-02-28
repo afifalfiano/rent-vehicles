@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'rent-vehicles-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "rent-vehicles-root",
+  templateUrl: "./app.component.html",
 })
 export class AppComponent {
-  title = 'frontend-rent';
+  title = "frontend-rent";
 }
