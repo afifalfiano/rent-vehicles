@@ -2,7 +2,9 @@
   "name": "rent-vehicles",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "frontend": "npx nx serve frontend-rent --configuration=development"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",

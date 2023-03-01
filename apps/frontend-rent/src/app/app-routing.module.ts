@@ -4,32 +4,35 @@ import { Routes, RouterModule } from "@angular/router";
 // layouts
 import { AdminComponent } from "./layouts/admin/admin.component";
 import { AuthComponent } from "./layouts/auth/auth.component";
+import { CategoryComponent } from "./views/admin/category/category.component";
 
 // admin views
 import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
-import { MapsComponent } from "./views/admin/maps/maps.component";
+import { ItemsComponent } from "./views/admin/items/items.component";
+import { ReportsComponent } from "./views/admin/reports/reports.component";
 import { SettingsComponent } from "./views/admin/settings/settings.component";
-import { TablesComponent } from "./views/admin/tables/tables.component";
+import { TenantComponent } from "./views/admin/tenant/tenant.component";
+import { TransactionsComponent } from "./views/admin/transactions/transactions.component";
 
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
 import { RegisterComponent } from "./views/auth/register/register.component";
+import { NotfoundComponent } from "./views/notfound/notfound/notfound.component";
 
-// no layouts views
-import { IndexComponent } from "./views/index/index.component";
-import { LandingComponent } from "./views/landing/landing.component";
-import { ProfileComponent } from "./views/profile/profile.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: 'auth/login', pathMatch: 'full' },
   // admin views
   {
     path: "admin",
     component: AdminComponent,
     children: [
-      { path: "dashboard", component: DashboardComponent },
-      { path: "settings", component: SettingsComponent },
-      // { path: "tables", component: TablesComponent },
-      // { path: "maps", component: MapsComponent },
+      { path: "dashboard", title: 'Dashboard', component: DashboardComponent },
+      { path: "tenant", title: 'Tenant', component: TenantComponent },
+      { path: "items", title: 'Items', component: ItemsComponent },
+      { path: "category", title: 'Category', component: CategoryComponent },
+      { path: "transactions", title: 'Transactions', component: TransactionsComponent },
+      { path: "reports", title: 'Reports', component: ReportsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ],
   },
@@ -44,10 +47,9 @@ const routes: Routes = [
     ],
   },
   // no layout views
-  { path: "profile", component: ProfileComponent },
-  { path: "landing", component: LandingComponent },
-  { path: "", component: IndexComponent },
-  { path: "**", redirectTo: "", pathMatch: "full" },
+  {path: 'notfound', component: NotfoundComponent},
+  { path: "**", redirectTo: "notfound", pathMatch: "full" },
+
 ];
 
 @NgModule({

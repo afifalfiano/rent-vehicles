@@ -8,7 +8,6 @@ import { MapExampleComponent } from './components/maps/map-example/map-example.c
 import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 import { FooterAdminComponent } from './components/footers/footer-admin/footer-admin.component';
 import { FooterSmallComponent } from './components/footers/footer-small/footer-small.component';
-import { FooterComponent } from './components/footers/footer/footer.component';
 import { IndexDropdownComponent } from './components/dropdowns/index-dropdown/index-dropdown.component';
 import { NotificationDropdownComponent } from './components/dropdowns/notification-dropdown/notification-dropdown.component';
 import { PagesDropdownComponent } from './components/dropdowns/pages-dropdown/pages-dropdown.component';
@@ -35,7 +34,6 @@ import { Routes, RouterModule } from "@angular/router";
     HeaderStatsComponent,
     FooterAdminComponent,
     FooterSmallComponent,
-    FooterComponent,
     IndexDropdownComponent,
     NotificationDropdownComponent,
     PagesDropdownComponent,
@@ -60,7 +58,6 @@ import { Routes, RouterModule } from "@angular/router";
     HeaderStatsComponent,
     FooterAdminComponent,
     FooterSmallComponent,
-    FooterComponent,
     IndexDropdownComponent,
     NotificationDropdownComponent,
     PagesDropdownComponent,

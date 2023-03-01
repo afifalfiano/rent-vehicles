@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MAIN_MENU } from "../../utils/menu";
 
 @Component({
   selector: "app-sidebar",
@@ -6,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SidebarComponent implements OnInit {
   collapseShow = "hidden";
+  MAIN_MENU = MAIN_MENU;
   constructor() {}
 
   ngOnInit() {}
