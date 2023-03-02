@@ -1,3 +1,4 @@
+import { PrismaClient } from '.prisma/client';
 import {
   Controller,
   Get,
@@ -7,9 +8,11 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
+import { Prisma } from '@prisma/client';
 import { CategoryService } from './category.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
+
 
 @Controller('category')
 export class CategoryController {

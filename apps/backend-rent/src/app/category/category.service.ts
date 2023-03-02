@@ -2,6 +2,9 @@ import { Injectable } from '@nestjs/common';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 import {from} from 'rxjs';
+import { Category, PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient()
 
 @Injectable()
 export class CategoryService {
@@ -9,8 +12,8 @@ export class CategoryService {
     return 'This action adds a new category';
   }
 
-  findAll() {
-    return {message: 'This action returns all category'};
+  findAll(): Promise<Category[]> {
+    return prisma.category.findMany();
   }
 
   findOne(id: number) {
