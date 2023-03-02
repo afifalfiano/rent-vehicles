@@ -16,7 +16,7 @@ import { CategoryComponent } from './views/admin/category/category.component';
 import { TransactionsComponent } from './views/admin/transactions/transactions.component';
 import { ReportsComponent } from './views/admin/reports/reports.component';
 import { NotfoundComponent } from './views/notfound/notfound/notfound.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +33,7 @@ import { NotfoundComponent } from './views/notfound/notfound/notfound.component'
     ReportsComponent,
     NotfoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonUiModule],
+  imports: [BrowserModule, AppRoutingModule, CommonUiModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
