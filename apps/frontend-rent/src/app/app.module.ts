@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommonUiModule } from '@rent-vehicles/common-ui';
+import { FrontendCommonUiModule } from '@rent-vehicles/frontend/common-ui';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { AuthComponent } from './layouts/auth/auth.component';
 import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
@@ -33,7 +33,7 @@ import {HttpClientModule} from '@angular/common/http';
     ReportsComponent,
     NotfoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CommonUiModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FrontendCommonUiModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

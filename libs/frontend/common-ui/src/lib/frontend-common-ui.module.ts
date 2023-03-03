@@ -73,4 +73,4 @@ import { Routes, RouterModule } from "@angular/router";
     CardTableComponent
   ]
 })
-export class CommonUiModule {}
+export class FrontendCommonUiModule {}

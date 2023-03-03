@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@rent-vehicles/common-ui": ["libs/common-ui/src/index.ts"]
+      "@rent-vehicles/backend/category": ["libs/backend/category/src/index.ts"],
+      "@rent-vehicles/common-ui": ["libs/common-ui/src/index.ts"],
+      "@rent-vehicles/frontend/common-ui": [
+        "libs/frontend/common-ui/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
