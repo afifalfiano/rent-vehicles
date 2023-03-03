@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@rent-vehicles/backend/category": ["libs/backend/category/src/index.ts"],
+      "@rent-vehicles/backend/item": ["libs/backend/item/src/index.ts"],
+      "@rent-vehicles/backend/report": ["libs/backend/report/src/index.ts"],
+      "@rent-vehicles/backend/user": ["libs/backend/user/src/index.ts"],
       "@rent-vehicles/common-ui": ["libs/common-ui/src/index.ts"],
       "@rent-vehicles/frontend/common-ui": [
         "libs/frontend/common-ui/src/index.ts"
